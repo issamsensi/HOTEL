@@ -312,8 +312,8 @@ As an academic project, this repository serves as a portfolio piece. For educati
 
 **Issam Sensi**
 - **Portfolio**: [issamsensi.com](https://issamsensi.com)
-- **Email**: contact@issamsensi.com
-- **LinkedIn**: [linkedin.com/in/issamsensi](https://linkedin.com/in/issamsensi)
+- **Email**: issamsensi@gmail.com
+- **LinkedIn**: [linkedin.com/in/issamsensi](https://www.linkedin.com/in/issam-amghar-406b3a228)
 - **GitHub**: [github.com/issamsensi](https://github.com/issamsensi)
 
 ### Academic Project Information
