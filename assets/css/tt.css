@@ -1,0 +1,279 @@
+ 
+    :root {
+      --primary: #0d4a9d;
+      --secondary: #0a1a2b;
+      --accent: #ffc107;
+    }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+      color: white;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    header {
+      background: rgba(10, 26, 43, 0.95);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+    
+    .logo {
+      font-weight: 700;
+      font-size: 1.75rem;
+      background: linear-gradient(to right, var(--primary), #3a7bd5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    main {
+      padding-top: 100px;
+      padding-bottom: 60px;
+    }
+    
+    section {
+      margin-bottom: 60px;
+    }
+    
+    /* Card Styles */
+    /*
+    .card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s ease;
+      border-radius: 12px;
+      overflow: hidden;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(13, 74, 157, 0.3);
+      border-color: rgba(13, 74, 157, 0.5);
+    }
+    */
+    /* Button Styles */
+    .btn {
+      transition: all 0.3s;
+      transform: translateY(0);
+      background: linear-gradient(135deg, var(--primary) 0%, #1a5cb0 100%);
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      padding: 12px 24px;
+    }
+    
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(13, 74, 157, 0.4);
+      background: linear-gradient(135deg, #1a5cb0 0%, var(--primary) 100%);
+    }
+    
+    .btn:active {
+      transform: translateY(1px);
+    }
+    
+   
+    
+    img.loaded {
+      opacity: 1;
+    }
+    
+    h1, h2, h3, h4 {
+      font-weight: 700;
+      color: white;
+      margin-bottom: 1.5rem;
+    }
+    
+    h2 {
+      font-size: 2rem;
+      position: relative;
+      display: inline-block;
+    }
+    
+    h2:after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: var(--primary);
+      border-radius: 3px;
+    }
+    
+    p {
+      color: rgba(255, 255, 255, 0.85);
+    }
+    
+    nav a {
+      position: relative;
+      padding: 8px 0;
+      color: rgba(255, 255, 255, 0.9);
+      font-weight: 500;
+    }
+    
+    nav a:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--primary);
+      transition: width 0.3s;
+    }
+    
+    nav a:hover {
+      color: white;
+    }
+    
+    nav a:hover:after {
+      width: 100%;
+    }
+    
+    /* Form Elements */
+    /*
+    input, select, textarea {
+      background: rgba(255, 255, 255, 0.1) !important;
+      border: 1px solid rgba(255, 255, 255, 0.2) !important;
+      color: white !important;
+      transition: all 0.3s;
+      border-radius: 8px !important;
+      padding: 12px 16px !important;
+    }
+    */
+    input::placeholder, textarea::placeholder {
+      color: rgba(255, 255, 255, 0.6) !important;
+    }
+    /*
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--primary) !important;
+      box-shadow: 0 0 0 3px rgba(13, 74, 157, 0.3) !important;
+      outline: none;
+    }
+    */
+    /* Rating Stars */
+    .rating-label {
+      font-size: 24px;
+      transition: all 0.2s;
+      color: #ccc;
+      cursor: pointer;
+    }
+    
+    .rating-input:checked ~ .rating-label,
+    .rating-label:hover,
+    .rating-label:hover ~ .rating-label {
+      color: var(--accent);
+    }
+    
+    
+    /* Mobile Menu */
+    .mobile-menu {
+      transition: all 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+      background: rgba(10, 26, 43, 0.98);
+      backdrop-filter: blur(15px);
+    }
+    
+    .mobile-menu.open {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0);
+    }
+    
+    .mobile-menu.closed {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(100%);
+    }
+    
+    @media (max-width: 768px) {
+      main {
+        padding-top: 80px;
+      }
+      
+      section {
+        margin-bottom: 40px;
+      }
+      
+      h2 {
+        font-size: 1.75rem;
+      }
+      
+      .container {
+        padding: 0 15px;
+      }
+    }
+    
+    .swiper-pagination-bullet {
+      background: rgba(255, 255, 255, 0.5);
+      opacity: 1;
+      width: 10px;
+      height: 10px;
+      transition: all 0.3s;
+    }
+    
+    .swiper-pagination-bullet-active {
+      background: var(--primary);
+      width: 30px;
+      border-radius: 5px;
+    }
+    
+    #back-to-top {
+      transition: all 0.3s;
+      background: linear-gradient(135deg, var(--primary) 0%, #1a5cb0 100%);
+      box-shadow: 0 4px 15px rgba(13, 74, 157, 0.4);
+    }
+    
+    #back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    
+    #back-to-top.hidden {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+    }
+    
+    .room-badge {
+      transition: all 0.3s;
+      font-size: 0.75rem;
+      padding: 4px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    
+    .room-badge:hover {
+      transform: scale(1.05);
+    }
+    
+    .review-form {
+      background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
