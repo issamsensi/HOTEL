@@ -10,7 +10,6 @@
 
 **👥 Team Collaboration**: Developed in collaboration with **Yassine KMD** as part of our final study project partnership.
 
-![Grand Horizon Hotel](https://via.placeholder.com/1200x600/0a1a2b/ffffff?text=Grand+Horizon+Hotel+Screenshot)
 
 ## ✨ Features
 
@@ -308,10 +307,6 @@ As an academic project, this repository serves as a portfolio piece. For educati
 - Ensure responsive design works
 - Test thoroughly before deployment
 - Document any modifications
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 📞 Contact & Academic Recognition
 
